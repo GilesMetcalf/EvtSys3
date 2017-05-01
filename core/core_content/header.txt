@@ -1,0 +1,162 @@
+<!-- IE quirks rendering mode trigger -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- <title><? echo $title_tag.' - '.$page->menuTitle; ?> </title> -->
+<link href="../css/my_layout.css" rel="stylesheet" type="text/css" />
+<!--[if lte IE 7]>
+<link href="../css/patch_my_layout.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+</head>
+
+<body oncontextmenu="return false;" id="<? echo $page->mID; ?>">
+
+      <div id="header">
+	  <img class="rightimg" src="../images/smalllogo.gif">
+	  <br><h1>&nbsp;the unoff weekend 3</h1>
+	  <h3>Milton Keynes - 25th to 27th February 2011</h3>
+	  <p align="right">
+	  <!-- Header code -->
+			<?
+				$userName = get_name();
+				$userId = is_logged();
+				
+				if($userName != "")
+				{
+					if(get_user_status($userId) >1)
+						{echo "Welcome back, $userName! &nbsp;&nbsp;";}
+					else
+						{echo "Welcome, Guest! &nbsp;&nbsp;";}
+				}
+				else
+				{
+					echo "Welcome to the Unoff Weekend 3 web site";
+				}
+			?>
+		</p>
+		
+	  </div>
+
+<div id="wrapper1">
+<div id="wrapper2">
+	<div id="maincol">
+
+		<div id="nav">
+
+	  <!-- Navigation code -->
+		<!--Navigation for everyone-->
+			<span class="lv1"><a class="m1" href="../core/main.php">Home</a></span><br>
+			
+		<?	
+		if(get_user_status($userId) >0)
+		{
+		?>
+			<!--Guest-accessible pages-->
+			<span class="lv1"><em>The Location</em></span><br>
+			<span class="lv2"><a class="m31" href="../members/hotel.php">The Hotel</a></span><br>
+			<span class="lv2"><a class="m32" href="../members/location.php">Milton Keynes</a></span><br>
+
+		<?
+		if(get_user_status($userId) >= 2)
+		{
+		?>
+			<!--Full member functions-->
+			<span class="lv2"><a class="m55" href="../members/travelshare.php">Car Sharing</a></span><br>
+		<?}?>	
+
+			<span class="lv1"><em>Food</em></span><br>
+			<span class="lv2"><a class="m35" href="../members/buffet.php">The Buffet on Friday</a></span><br>
+			<span class="lv2"><a class="m36" href="../members/dinner.php">The Dinner on Saturday</a></span><br>
+			<span class="lv2"><a class="m37" href="../members/paygdinner.php">PAYG Dinner on Sunday</a></span><br>
+
+			<!--
+			<span class="lv1"><em>What's On</em></span><br>
+			<span class="lv2"><a class="m47" href="../members/openmike.php">Open Mike Night</a></span><br>
+			-->
+
+			<span class="lv1"><em>Talks</em></span><br>
+			<span class="lv2"><a class="m42" href="../members/selfawareness.php">Self Awareness</a></span><br>
+			<span class="lv2"><a class="m43" href="../members/enigma.php">The Enigma Machine</a></span><br>
+			<span class="lv2"><a class="m44" href="../members/buildwebsite.php">Build Your Own Website</a></span><br>
+			
+			<span class="lv1"><em>Other Activities</em></span><br>
+			<span class="lv2"><a class="m41" href="../members/murder.php"><em>Murder!</em></a></span><br>
+
+			<span class="lv2"><a class="m51" href="../members/treasure.php">Treasure Hunt</a></span><br>
+			<span class="lv2"><a class="m52" href="../members/swimming.php">Swimming Lessons</a></span><br>
+			<span class="lv2"><a class="m45" href="../members/competitions.php">Competitions</a></span><br>
+			<span class="lv2"><a class="m46" href="../members/poker.php">Poker</a></span><br>
+			<span class="lv2"><a class="m56" href="../members/healthscreen.php">Health Checks</a></span><br>
+			<span class="lv2"><a class="m57" href="../members/bletchley.php">Bletchley Park</a></span><br>
+		<?}
+		if(get_user_status($userId) >1)
+		{
+		?>
+			<!--User-accessible pages-->
+			<span class="lv1"><em>Booking</em></span><br>
+			<span class="lv2"><a class="m54" href="../members/booking.php">Booking Information</a></span><br>
+		<?	
+		}
+		if(get_user_status($userId) == 1)
+		{
+		?>
+			<!--Guest user functions-->
+			<span class="lv1"><em>Guest functions</em></span><br>
+			<span class="lv2"><a class="m24" href="../core/signup.php">Request a User Name</a></span><br>
+		<?}
+		if(get_user_status($userId) >= 2)
+		{
+		?>
+			<!--Full member functions-->
+			<span class="lv1"><em>Member functions</em></span><br>
+			<span class="lv2"><a class="m21" href="../core/profile.php">My Profile</a></span><br>
+			<span class="lv2"><a class="m20" href="../core/changepwd.php">Change Password</a></span><br>
+			<span class="lv2"><a class="m55" href="../members/whoswho.php">Who's Who?</a></span><br>
+		<?}
+		if(get_user_status($userId) == 3)
+		{
+		?>
+			<!--Admin user functions-->
+			<span class="lv1"><em>Admin functions</em></span><br>
+			<span class="lv2"><a class="m10" href="../admin/useradmin.php">User Administration</a></span><br>
+			<span class="lv2"><a class="m15" href="../admin/eventadmin.php">Event Administration</a></span><br>
+			<span class="lv2"><a class="m14" href="../admin/siteadmin.php">Site Administration</a></span><br>
+			<span class="lv2"><a class="m17" href="../admin/reportadmin.php">Reports</a></span><br>
+			<span class="lv2"><a class="m18" href="../admin/accesslog.php">Access Log</a></span><br>
+			<span class="lv2"><a class="m16" href="../admin/dbbackup.php">Database Backup</a></span><br>
+			<span class="lv2"><a class="m20" href="../core/changepwd.php">Change Admin Password</a></span><br>
+		<?}
+		if($userId = is_logged())
+		{
+		?>
+			<!--Logged in-->
+			<span class="lv1"><a class="m3" href="../core/logout.php">Logout</a></span><br>
+		<?}
+		else 
+		{?>
+			<!--Not logged in-->
+			<span class="lv1"><a class="m2" href="../core/login.php">Login</a><br>
+		<?}?>
+
+		</div>
+		  
+
+		<div id="content">
+	  <p>&nbsp;</p>
+      <h2><? echo $page->Heading; ?></h2>
+		  
+		<!-- ******************************************************************************** -->  
+		<!-- ********************** This is the start of the text body ********************** -->  
+		<!-- ******************************************************************************** -->  
+		  
+
+
+
+
+
+
+
+
+

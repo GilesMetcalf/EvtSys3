@@ -1,0 +1,80 @@
+body {
+	margin:1em;;
+	padding:0;
+	}
+
+#wrapper1 {
+	position:relative;
+	text-align:left;
+	width:100%;
+	}
+
+#wrapper2 {
+	position:relative;
+	text-align:left;
+	width:100%;
+	}
+
+#header {
+	background-color:#FFFFFF;
+	font-size: 80%;
+	margin:0;
+	padding-left: 1em;
+	padding-right: 1em;
+	}
+
+#maincol {
+	position:relative;
+	margin:0;
+	padding:1em;
+	z-index: 1;
+	}
+
+#nav { 
+	background-color:#999999;
+	position:relative;
+	top:-10px;
+	left:-10px;
+	float:left;
+	width:170px;  /* for IE5/WIN */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:170px; /* actual value */
+	margin:0 0 -10px 0;
+	padding:10px;
+	z-index:100;
+	}
+
+#nav2 {
+	position:relative;
+	top:-10px;
+	right:-10px;
+	float:right;
+	width:220px;  /* for IE5/WIN */
+	voice-family: "\"}\"";
+	voice-family:inherit;
+	width:200px; /* actual value */
+	margin:0 0 -10px 0;
+	padding:10px;
+	z-index:99;
+
+	}
+#content {
+	position:relative;
+	padding:0 190px;
+	}
+
+#content_wide {
+	background-color:#FFFFFF;
+	position:relative;
+	padding:0 190px;	
+	}
+
+#footer {
+	background-color:#990000;
+	position:relative;
+	top:1px;
+	width:100%;
+	clear:both;
+	margin:0;
+	}

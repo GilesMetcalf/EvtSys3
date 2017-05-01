@@ -1,0 +1,7 @@
+<h2>Welcome to the Unoff Weekend 3 website</h2>
+<p>This site is for Unoff Weekend attendees and other interested parties only.  
+You will need a username and password to access some parts of the site, although the user 
+"Guest" will enable you to see what is on offer. The password for the Guest user is published 
+on the Unoff chat list.</p>
+<p>&nbsp;</p>
+<p><strong><em><a href="login.php">Please log in</a> </em></strong></p>

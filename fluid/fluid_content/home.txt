@@ -1,0 +1,13 @@
+<img class="leftimg" src="../images/logo.gif"><h4>Welcome to the Unoff Weekend 3 site</h4>
+<p>The Unoff Weekend is open to current and past members of the Unoff List and
+their partners and family.</p>
+
+<p>The dates for the weekend have been confirmed as Friday 25th to
+Monday 28th February 2011. The location will be the same as in 2009 - the Holiday
+Inn, Milton Keynes.</p>
+<p>The Profile section of the website is also available. Please take a couple of minutes to 
+<a href="../core/profile.php">visit the Profile page</a> to add a few details and a photo.<br />
+Thanks!</p>
+<p>&nbsp;</p>
+<p><em>Merry &amp; Giles</em></p>
+<p>&nbsp;</p>

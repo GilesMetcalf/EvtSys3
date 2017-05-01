@@ -1,0 +1,33 @@
+		<!-- ******************************************************************************** -->  
+		<!-- *********************** This is the end of the text body *********************** -->  
+		<!-- ******************************************************************************** -->  
+
+
+          <p>&nbsp;</p>
+      </div>
+    </div>
+		  
+      <div id="footer">
+	  <p class="attrib">&copy; BarnHouse Designs (2010)<br />
+	  
+		<span class="updated">
+		<script language="JavaScript" type="text/javascript">
+		<!-- hide from old browsers
+		  var modDate = new Date(document.lastModified)
+		  var modYear = modDate.getYear()
+		  if(modYear<1000) modYear+=1900
+		  document.write("Page last updated: " +  modDate.getDate() + "-" + (modDate.getMonth()+1)  + "-" + modYear)
+		//-->
+		</script>
+		</span>
+		</p>
+	</div>
+    </div>
+  </div>
+</body>
+</html>
+
+
+
+
+

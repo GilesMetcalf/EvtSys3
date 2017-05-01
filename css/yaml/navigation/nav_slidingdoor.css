@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Horizontal list navigation based on "Sliding Door II" from von "A List Apart"
+ * (de) Horizontale Navigationsliste basierend auf "Sliding Door II" von "A List Apart"
+ *
+ * @copyright       Copyright 2005-2008, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.0.6
+ * @revision        $Revision: 202 $
+ * @lastmodified    $Date: 2008-06-07 14:29:18 +0200 (Sa, 07 Jun 2008) $
+ */
+
+@media all
+{
+  #nav_main {
+    /* (en) This image is mainly transparent */
+    /* (de) Dieses Bild ist größtenteils transparent */
+    background: transparent url("images/sliding_door/round/bg.gif") repeat-x bottom;
+    float: left;
+    width: 100%;
+  }
+
+  #nav_main ul {
+    line-height: 1em
